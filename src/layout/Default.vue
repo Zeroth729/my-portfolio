@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
 import Profile from '@/components/Profile.vue';
 import Navigation from '@/components/Navigation.vue';
 
@@ -30,17 +29,12 @@ export default {
       routes,
     };
   },
-  computed: {
-    ...mapState(['activePage']),
-  },
-  mounted() {
-    console.log(this.routes);
-  },
 };
 </script>
 
 <style lang="scss" scoped>
 .site {
+  background-color: $bg-default;
 
   &__menu {
     position: fixed;
@@ -51,6 +45,12 @@ export default {
     height: 100%;
     background-color: $tiffany;
     opacity: 0.75;
+
+    @include tabletAndDown {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__navigation {
@@ -60,7 +60,15 @@ export default {
   &__main {
     padding: 50px;
     margin-left: 25%;
-    height: 1000px;
+    max-width: 1000px;
+    min-height: 1000px;
+    color: $text-color;
+    background-color: $bg-color-1;
+
+    @include tabletAndDown {
+      margin-left: 0;
+      max-width: none;
+    }
   }
 }
 </style>

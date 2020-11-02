@@ -22,7 +22,6 @@ export default {
   watch: {
     $route: {
       handler: (to) => {
-        console.log(to);
         document.title = `KenB's Portfolio | ${to.meta.title}`;
       },
       immediate: true,

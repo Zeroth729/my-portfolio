@@ -28,25 +28,10 @@ const routes = [
       title: 'Abilities',
     },
   },
-  {
-    path: '/work',
-    name: 'Work',
-    component: () => import(/* webpackChunkName: "work" */ './views/Work.vue'),
-    meta: {
-      title: 'Work',
-    },
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue'),
-    meta: {
-      title: 'Contact',
-    },
-  },
 ];
 
 const router = new VueRouter({
+  mode: 'history',
   routes,
 });
 

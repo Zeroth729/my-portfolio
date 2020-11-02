@@ -1,0 +1,68 @@
+{
+  "experience": [
+    {
+      "period": "Now",
+      "work": [
+        {
+          "title": "881903.com",
+          "context": "Commercial Radio main site has just been revamped last year involving data migration, server setup, web frontend, content management system, etc.",
+          "image": "881903.png",
+          "url": "https://www.881903.com",
+          "tech": [
+            "VueJS",
+            "Vuex",
+            "PHP",
+            "Phalcon",
+            "Nginx"
+          ]
+        },
+        {
+          "title": "髮再生",
+          "context": "A campaign site....",
+          "tech": []
+        }
+      ]
+    },
+    {
+      "period": "2014 - 2017",
+      "work": [
+        {
+          "title": "WSD",
+          "context": ""
+        },
+        {
+          "title": "EMSD",
+          "context": ""
+        },
+        {
+          "title": "FEHD",
+          "context": ""
+        },
+        {
+          "title": "HongKongPost",
+          "context": ""
+        },
+        {
+          "title": "PolyU Main Site",
+          "context": ""
+        },
+        {
+          "title": "“無盡思念”網站流動應用程式",
+          "context": "",
+          "tech": [
+            "Cordova"
+          ]
+        }
+      ]
+    },
+    {
+      "period": "2013 - 2014",
+      "work": [
+        {
+          "title": "Student Helper",
+          "context": "Develop a mobile application with PhoneGap to promote conservation of the sea and its organisms. <br>Design wireframes and create artwork for the application"
+        }
+      ]
+    }
+  ]
+}

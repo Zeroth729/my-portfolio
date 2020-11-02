@@ -40,21 +40,27 @@ export default {
   &__item {
     list-style-type: none;
     margin: 0 0 20px;
+    font-size: 20px;
 
     &:after {
-      content: '\E766';
-      font-family: 'fontello';
+      content: '\F0A9';
+      margin-left: 5px;
       color: white;
+      font-size: 0.75em;
+      font-family: 'fontello';
+      transition: margin-left 0.2s ease-in;
+      @include valign(middle);
+    }
+
+    &:hover:after {
+      margin-left: 10px;
     }
   }
 
   &__link {
     color: white;
     text-decoration: none;
-
-    &:hover {
-
-    }
+    @include valign(baseline);
   }
 }
 </style>
