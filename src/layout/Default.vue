@@ -1,7 +1,9 @@
 <template>
   <div class="site">
     <aside class="site__menu">
-      <SiteNavigation
+      <Profile />
+      <Navigation
+        class="site__navigation"
         :nav-list="routes"
       />
     </aside>
@@ -13,12 +15,14 @@
 
 <script>
 import { mapState } from 'vuex';
-import SiteNavigation from '@/components/Navigation.vue';
+import Profile from '@/components/Profile.vue';
+import Navigation from '@/components/Navigation.vue';
 
 export default {
   name: 'Default',
   components: {
-    SiteNavigation,
+    Profile,
+    Navigation,
   },
   data() {
     const { routes } = this.$router.options;
@@ -47,6 +51,10 @@ export default {
     height: 100%;
     background-color: $tiffany;
     opacity: 0.75;
+  }
+
+  &__navigation {
+    margin: 30px 0 0 0;
   }
 
   &__main {

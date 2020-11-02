@@ -1,5 +1,9 @@
 <template>
-  <div>Home</div>
+  <div class="home">
+    <div class="home__introduction">
+
+    </div>
+  </div>
 </template>
 
 <script>
