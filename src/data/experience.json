@@ -6,20 +6,83 @@
         {
           "title": "881903.com",
           "context": "Commercial Radio main site has just been revamped last year involving data migration, server setup, web frontend, content management system, etc.",
-          "image": "881903.png",
+          "images": [
+            "881903-1.png",
+            "881903-2.png",
+            "881903-3.png"
+          ],
           "url": "https://www.881903.com",
           "tech": [
             "VueJS",
             "Vuex",
             "PHP",
             "Phalcon",
-            "Nginx"
+            "Nginx",
+            "Google Tag Manager"
+          ],
+          "task": [
+            {
+              "title": "Timetable",
+              "context": "The task is to create a real-time timetable in accord to 881903 CMS content. The timetable is able to update schedule by itself even in idle."
+            },
+            {
+              "title": "Member Login",
+              "context": "The membership feature includes registration, profile update, phone number verification, membership purchase, etc."
+            },
+            {
+              "title": "News Feed Worker",
+              "context": "The worker is to retrieve 24 hours news and generate RSS or XML file every 10 minutes for social platform like Line and NOW to deliver news feeds on their mobile applications or websites."
+            },
+            {
+              "title": "Custom Creative Template for Google Admanager",
+              "context": "Add a crazy ad with self-coded creative template to deliver whatever-you-want ad on the site"
+            }
           ]
         },
         {
-          "title": "髮再生",
-          "context": "A campaign site....",
-          "tech": []
+          "title": "我們的60年 - 商業電台經典重溫",
+          "context": "A campaign site to celebrate CR881903 60th anniversary. It is similar to 881903.com 視電台 but without <strong>jQuery</strong> and <strong>Youtube Data API</strong>. The site uses HTML5 Video in place of Youtube iframe. Sound files and JSON files are provided by project managers on mount drive. A worker is written to sync media and JSON files. The site gets media file via symbolic links.",
+          "images": ["cr60-1.png"],
+          "url": "https://campaign.881903.com/CR60_ClassicPrograms/index.php",
+          "tech": [
+            "PHP",
+            "Gulp",
+            "Google Tag Manager",
+            "DoubleClick for Publisher (DFP)",
+            "Interactive Media Ads (IMA)"
+          ]
+        },
+        {
+          "title": "881903.com 視電台",
+          "context": "A website deeply rely on 881903.com Youtube Channel. No database is involved. The whole application uses Youtube Data API to mimic Youtube interface including get playlist item (video) snippets, statistic (view count, like count). And a heavy implementation of DoubleClick for Publisher (DFP) and Interactive Media Ads (IMA) aiming to earn more revenue",
+          "images": [
+            "crtv-1.png",
+            "crtv-2.png",
+            "crtv-3.png"
+          ],
+          "url": "http://crtv.881903.com/",
+          "tech": [
+            "PHP",
+            "Gulp",
+            "jQuery 3",
+            "Google Tag Manager",
+            "DoubleClick for Publisher (DFP)",
+            "Interactive Media Ads (IMA)"
+          ],
+          "task": [
+            {
+              "title": "Youtube Data API",
+              "context": "The application data request was done with PHP at first but it requires quota counts. It changes to using Ajax at the end because no quota limit is set."
+            },
+            {
+              "title": "DoubleClick for Publisher (DFP)",
+              "context": "DFP are loaded with lazy load configs later due to project team reported that ad impression did not look good"
+            },
+            {
+              "title": "Interactive Media Ads (IMA)",
+              "context": "Youtube embed iframe does not provide Google Ads Service. The implementation is to call Youtube Iframe API to initiate the iframe but inserting (on-top-of-video) a pre-roll VAST or VPAID ads before playing the loaded Youtube video."
+            }
+          ]
         }
       ]
     },

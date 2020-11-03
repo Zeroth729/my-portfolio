@@ -48,6 +48,7 @@ export default {
 
     @include tabletAndDown {
       position: relative;
+      padding: 15px 10px;
       width: 100%;
       height: auto;
     }
@@ -66,6 +67,7 @@ export default {
     background-color: $bg-color-1;
 
     @include tabletAndDown {
+      padding: 15px 10px;
       margin-left: 0;
       max-width: none;
     }
