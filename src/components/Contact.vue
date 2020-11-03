@@ -47,6 +47,10 @@ export default {
     display: inline-block;
     margin-left: 10px;
 
+    @include tabletAndDown {
+      margin-left: 20px;
+    }
+
     &:first-child {
       margin-left: 0;
     }
@@ -58,6 +62,10 @@ export default {
       font-size: 18px;
       font-family: 'fontello';
       color: white;
+
+      @include tabletAndDown {
+        font-size: 30px;
+      }
     }
 
     &--linkedIn {

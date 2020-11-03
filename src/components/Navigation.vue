@@ -50,7 +50,7 @@ export default {
     font-size: 20px;
 
     @include tabletAndDown {
-      font-size: 24px;
+      font-size: 40px;
     }
 
     &.active {
@@ -75,7 +75,6 @@ export default {
 
       @include tabletAndDown {
         font-size: 0.5em;
-        @include valign(baseline);
       }
     }
 
@@ -90,6 +89,10 @@ export default {
     text-transform: uppercase;
     font-size: 14px;
     @include valign(baseline);
+
+    @include tabletAndDown {
+      font-size: 40px;
+    }
 
     .active & {
       color: $text-color-highlight;
