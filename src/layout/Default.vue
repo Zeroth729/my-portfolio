@@ -82,6 +82,7 @@ export default {
       padding: 15px 10px;
       margin-left: 0;
       max-width: none;
+      min-height: 0;
     }
   }
 }
