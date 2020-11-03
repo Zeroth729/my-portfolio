@@ -5,6 +5,7 @@
       <Navigation
         class="site__navigation"
         :nav-list="routes"
+        :active-page="activePage"
       />
     </aside>
     <div class="site__main">
@@ -16,6 +17,7 @@
 <script>
 import Profile from '@/components/Profile.vue';
 import Navigation from '@/components/Navigation.vue';
+import { mapState } from 'vuex';
 
 export default {
   name: 'Default',
@@ -28,6 +30,9 @@ export default {
     return {
       routes,
     };
+  },
+  computed: {
+    ...mapState(['activePage']),
   },
 };
 </script>

@@ -9,7 +9,11 @@
           "images": [
             "881903-1.png",
             "881903-2.png",
-            "881903-3.png"
+            "881903-3.png",
+            "881903-4.png",
+            "881903-5.png",
+            "881903-6.png",
+            "881903-7.png"
           ],
           "url": "https://www.881903.com",
           "tech": [
@@ -22,11 +26,15 @@
           ],
           "task": [
             {
-              "title": "Timetable",
+              "title": "新聞/財經及馬路的事",
+              "context": "I am in charge of 熱門新聞 (新聞HomePage), all frontend and backend part. Workers are created to generate snapshots of latest 10 items for different purposes. "
+            },
+            {
+              "title": "節目表",
               "context": "The task is to create a real-time timetable in accord to 881903 CMS content. The timetable is able to update schedule by itself even in idle."
             },
             {
-              "title": "Member Login",
+              "title": "881903會員",
               "context": "The membership feature includes registration, profile update, phone number verification, membership purchase, etc."
             },
             {
@@ -36,6 +44,44 @@
             {
               "title": "Custom Creative Template for Google Admanager",
               "context": "Add a crazy ad with self-coded creative template to deliver whatever-you-want ad on the site"
+            }
+          ]
+        },
+        {
+          "title": "髮再生",
+          "context": "A campaign from 髮再生 including a home page with one HTML5 Audio player, two forms for user to registration hair therapy and story sharing. A worker is written to send all new records of registration and story to client at 12pm. Email was sent with PHP Email<br><br><strong>NOT YET LAUNCHED</strong>",
+          "images": [
+            "hairagain-1.png",
+            "hairagain-2.png",
+            "hairagain-3.png",
+            "hairagain-4.png"
+          ],
+          "tech": [
+            "VueJS",
+            "PHP",
+            "PHP PDO"
+          ]
+        },
+        {
+          "title": "摯愛動心 Citigold 做得島",
+          "context": "A campaign working with Citibank, 881903 and GuruOnline. Citibank is the major host of the project. I, representing 881903, was in charge of game flow. And GuruOnline is responsible for quota control, API for checking user and quota and data collection. The game was developed with VueJS and Facebook authentication. Axios is used to call GuruOnline API requests.",
+          "images": [
+            "citibank-1.png"
+          ],
+          "url": "https://citibank2020.881903.com/",
+          "tech": [
+            "VueJS",
+            "Vuex",
+            "PHP",
+            "Facebook Login / OAuth"
+          ],
+          "task": [
+            {
+              "title": "Facebook Login / OAuth",
+              "context": "Facebook for developer console requires inserting app domains and privacy policy url to enable application being active. Facebook Login is one of the products chosen for the console. It requires Valid OAuth Redirect URIs which is Facebook Login callback, e.g. http://citibank2020.881903.com/fb"
+            },
+            {
+              "title": "API from GuruOnline testing with Postman"
             }
           ]
         },

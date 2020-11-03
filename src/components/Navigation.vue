@@ -7,6 +7,9 @@
         v-for="(navItem, navIdx) in navList"
         :key="navIdx"
         class="navigation__item"
+        :class="{
+          active: activePage === navItem.path
+        }"
       >
         <router-link
           :to="navItem.path"
@@ -26,6 +29,10 @@ export default {
       type: Array,
       require: true,
     },
+    activePage: {
+      type: String,
+      default: '',
+    },
   },
 };
 </script>
@@ -39,8 +46,19 @@ export default {
 
   &__item {
     list-style-type: none;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     font-size: 20px;
+
+    &.active {
+
+      &:after {
+        color: $border-color;
+      }
+
+      &:hover:after {
+        margin-left: 5px;
+      }
+    }
 
     &:after {
       content: '\F0A9';
@@ -60,7 +78,15 @@ export default {
   &__link {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
     @include valign(baseline);
+
+    .active & {
+      color: $border-color;
+      font-weight: bold;
+      pointer-events: none;
+    }
   }
 }
 </style>

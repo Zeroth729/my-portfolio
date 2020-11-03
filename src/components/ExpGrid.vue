@@ -91,8 +91,7 @@
               v-if="work.images.length > 1"
               cycle
               hide-delimiters
-              show-arrows-on-hover
-              height="200"
+              height="auto"
               class="work__preview"
             >
               <v-carousel-item
@@ -225,6 +224,10 @@ export default {
 
   &__preview {
     margin-top: 40px;
+
+    @include tabletAndDown {
+      margin-top: 0;
+    }
 
     /deep/ .v-window {
 
