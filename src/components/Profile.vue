@@ -16,7 +16,7 @@ export default {
   name: 'Profile',
   data() {
     return {
-      name: 'Ken Bei',
+      name: 'Ken B',
       post: 'Analyst Programmer',
     };
   },
@@ -32,7 +32,7 @@ export default {
   }
 
   &__name {
-    font-size: 28px;
+    font-size: 40px;
   }
 
   &__post {

@@ -136,30 +136,72 @@
       "period": "2014 - 2017",
       "work": [
         {
-          "title": "WSD",
-          "context": ""
-        },
-        {
-          "title": "EMSD",
-          "context": ""
-        },
-        {
-          "title": "FEHD",
-          "context": ""
-        },
-        {
-          "title": "HongKongPost",
-          "context": ""
-        },
-        {
-          "title": "PolyU Main Site",
-          "context": ""
-        },
-        {
           "title": "“無盡思念”網站流動應用程式",
-          "context": "",
+          "context": "My first mobile application development. The application was developed in 2016 but was first launched in late 2019. It allows user to create memorial page for their ancestors whose records are stored in FEHD database. Other functions include announcement, push notifications, making friends by scanning peer QR code, etc.",
+          "images": [
+            "memorial-1.png",
+            "memorial-2.png",
+            "memorial-3.png",
+            "memorial-4.png",
+            "memorial-5.png"
+          ],
           "tech": [
-            "Cordova"
+            "Cordova",
+            "ASP.NET"
+          ]
+        },
+        {
+          "title": "水務署",
+          "context": "One of the developers in F/E Revamp of Water Supplies Department Main Site. Website is required to fulfill WCAG 2.0 AA Standard.",
+          "images": [
+            "wsd-1.png",
+            "wsd-2.png"
+          ],
+          "url": "https://www.wsd.gov.hk/",
+          "tech": [
+            "HTML",
+            "jQuery",
+            "WCAG 2.0 AA"
+          ]
+        },
+        {
+          "title": "機電工程署",
+          "context": "One of the developers in F/E Revamp of Electrical and Mechanical Services Department Main Site. Website is required to fulfill WCAG 2.0 AA Standard.",
+          "images": [
+            "emsd-1.png"
+          ],
+          "url": "https://www.emsd.gov.hk/",
+          "tech":  [
+            "HTML",
+            "jQuery",
+            "WCAG 2.0 AA"
+          ]
+        },
+        {
+          "title": "食物環境衞生署",
+          "context": "One of the developers in F/E Revamp of Food and Environmental Hygiene Department Main Site. Website is required to fulfill WCAG 2.0 AA Standard.",
+          "images": [
+            "fehd-1.png"
+          ],
+          "url": "https://www.fehd.gov.hk/",
+          "tech":  [
+            "HTML",
+            "jQuery",
+            "WCAG 2.0 AA"
+          ]
+        },
+        {
+          "title": "香港郵政",
+          "context": "One of the developers in F/E Revamp of Hong Kong Post Main Site. Website is required to fulfill WCAG 2.0 AA Standard.",
+          "images": [
+            "hkpost-1.png",
+            "hkpost-2.png"
+          ],
+          "url": "https://www.hongkongpost.hk/",
+          "tech":  [
+            "HTML",
+            "jQuery",
+            "WCAG 2.0 AA"
           ]
         }
       ]
@@ -170,6 +212,15 @@
         {
           "title": "Student Helper",
           "context": "Develop a mobile application with PhoneGap to promote conservation of the sea and its organisms. <br>Design wireframes and create artwork for the application"
+        }
+      ]
+    },
+    {
+      "period": "2013",
+      "work": [
+        {
+          "title": "Intern at Modern Education Digital Media Limited",
+          "context": "Assist editors in making e-learning materials, e.g. primary school supplementary exercises, which run on mobile devices."
         }
       ]
     }

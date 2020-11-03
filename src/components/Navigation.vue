@@ -49,10 +49,14 @@ export default {
     margin: 0 0 10px;
     font-size: 20px;
 
+    @include tabletAndDown {
+      font-size: 24px;
+    }
+
     &.active {
 
       &:after {
-        color: $border-color;
+        color: $text-color-highlight;
       }
 
       &:hover:after {
@@ -68,6 +72,11 @@ export default {
       font-family: 'fontello';
       transition: margin-left 0.2s ease-in;
       @include valign(middle);
+
+      @include tabletAndDown {
+        font-size: 0.5em;
+        @include valign(baseline);
+      }
     }
 
     &:hover:after {
@@ -83,7 +92,7 @@ export default {
     @include valign(baseline);
 
     .active & {
-      color: $border-color;
+      color: $text-color-highlight;
       font-weight: bold;
       pointer-events: none;
     }

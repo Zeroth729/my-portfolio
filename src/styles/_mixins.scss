@@ -28,7 +28,7 @@
 }
 
 @mixin mobile {
-  @media (max-width: $tablet-min - 1) {
+  @media (max-width: $mobile-min - 1) {
     @content;
   }
 }

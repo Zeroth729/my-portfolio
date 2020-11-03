@@ -7,6 +7,7 @@
         :nav-list="routes"
         :active-page="activePage"
       />
+      <Contact/>
     </aside>
     <div class="site__main">
       <slot/>
@@ -17,6 +18,7 @@
 <script>
 import Profile from '@/components/Profile.vue';
 import Navigation from '@/components/Navigation.vue';
+import Contact from '@/components/Contact.vue';
 import { mapState } from 'vuex';
 
 export default {
@@ -24,6 +26,7 @@ export default {
   components: {
     Profile,
     Navigation,
+    Contact,
   },
   data() {
     const { routes } = this.$router.options;
@@ -57,6 +60,10 @@ export default {
       width: 100%;
       height: auto;
     }
+  }
+
+  &__home {
+    text-decoration: none;
   }
 
   &__navigation {

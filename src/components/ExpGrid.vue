@@ -100,6 +100,7 @@
               >
                 <v-img
                   :src="getImgUrl(image)"
+                  :lazy-src="getImgUrl(image)"
                 />
               </v-carousel-item>
             </v-carousel>
@@ -107,6 +108,7 @@
               class="work__preview"
               v-else-if="work.images.length === 1"
               :src="getImgUrl(work.images[0])"
+              :lazy-src="getImgUrl(work.images[0])"
             />
           </div>
         </div>
@@ -159,7 +161,7 @@ export default {
     &-text {
       position: relative;
       color: $border-color;
-      top: 18px;
+      top: 22px;
       font-size: 0.875rem;
     }
 
@@ -169,7 +171,7 @@ export default {
       height: 8px;
       background-color: $tiffany;
       position: absolute;
-      top: 28px;
+      top: 32px;
       right: -5px;
     }
   }
@@ -214,8 +216,13 @@ export default {
   &__title {
     color: $tiffany;
     font-size: 28px;
-    line-height: 1em;
+    line-height: 1.25em;
     margin-bottom: 10px;
+    white-space: nowrap;
+
+    @include tabletAndDown {
+      white-space: normal;
+    }
   }
 
   &__context {
