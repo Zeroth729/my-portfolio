@@ -13,5 +13,29 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCT9d08Gvqe6i-OkacnWR9zxbuoM1XPv98",
+        authDomain: "portfolio-ken-b.firebaseapp.com",
+        databaseURL: "https://portfolio-ken-b.firebaseio.com",
+        projectId: "portfolio-ken-b",
+        storageBucket: "portfolio-ken-b.appspot.com",
+        messagingSenderId: "575025672889",
+        appId: "1:575025672889:web:15e88f7a508da4ca632168",
+        measurementId: "G-EF2TKBD84L"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
