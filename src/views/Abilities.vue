@@ -30,7 +30,7 @@ export default {
         'Bootstrap Framework': 3,
         'CSS(3)': 5,
         'HTML(5)': 5,
-        NodeJS: 2,
+        NodeJS: 4,
         JSON: 5,
         React: 2,
         VueJS: 5,
